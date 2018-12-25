@@ -1,4 +1,4 @@
-# WMSMapGallery
+# WMS Map Gallery
 A collection of web maps projected throught [WMS Map Viewer](https://wms-viewer-online.appspot.com/).
 
 You may contribute to this collection by commiting changes to the files in this repository. Maps may be added as links or as html files compatible with *WMS Map Viewer*.
