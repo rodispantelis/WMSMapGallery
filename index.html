@@ -1,0 +1,149 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<STYLE>
+body{
+font-size: 25px;
+text-align: center;
+}
+a:link {
+    color: orange;
+	text-decoration: none;
+}
+a:visited {
+    color: orange;
+	text-decoration: none;
+}
+
+a:hover {
+    color: orange;
+	text-decoration: none;
+}
+a:active {
+    color: orange;
+	text-decoration: none;
+}
+#side{
+	position: absolute;
+	right:5px;
+	top:5px;
+	color:red;
+	display:none;
+}
+#hide{
+	position: fixed;
+	width:40px;
+	right:7px;
+	top:3px;
+	display:none;
+	background-color:lightblue;
+    color:rgb(179, 0, 0);
+	font-weight: 1000;
+	border: 2px solid blue;
+	border-radius: 4px;
+	z-index: 6000;
+}
+#sidebar {
+    position: fixed;
+	top:0;
+	right: 0;
+	background-color: rgb(51, 51, 51);
+	color:red;
+	display:none;
+    width: 210px;
+	height: 350px;
+	border: 1px;
+	border-radius: 5px;
+	z-index: 5900;
+}
+</STYLE>
+<title>WMS Map Gallery</title>  
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+</HEAD>
+<BODY>
+	<div id="side"></div>
+	<div id="sidebar" style="display:none;"></div>
+<button id="hide" onclick="hide()"><big><big> &equiv; </big></big></button>
+</BODY>
+<script src="mosaiko.js" type="text/javascript"></script>
+<script>
+//window.addEventListener("orientationchange", location.reload());
+function htmlcnt(d){
+	document.getElementById(d).innerHTML=
+		'<H3>WMS Map Gallery</H3>'+
+		'<a href="about.html" target="_blank">about</a><br>'+
+		'<a href="https://github.com/rodispantelis/WMSMapGallery" target="_blank">add a map</a><br>'+
+		'<a href="https://mappingapps.blogspot.com/" target="_blank">news and apps</a><br>';
+}
+function generate_table() {
+	var body = document.getElementsByTagName("body")[0];
+	var table = document.createElement("table");
+	var d1=mos.length;
+	var d2,d3;
+	var cnt=0;
+	if(screen.width>1000){
+		d2=5;
+		d3=screen.width*0.6/5;
+		htmlcnt("side");
+		document.getElementById("side").style.display="block";
+	}
+	else if(screen.width>800){
+		d2=4;
+		d3=screen.width*0.6/4;
+		htmlcnt("side");
+		document.getElementById("side").style.display="block";
+		document.getElementById("side").style.width="250px";
+	}else{
+		d2=2;
+		d3=screen.width/2.1;
+		body.style.margin=0;
+		body.style.padding=0;
+		htmlcnt("sidebar");
+		document.getElementById("hide").style.display="block";
+	}
+
+	for (var i = 0; cnt < d1; i++) {
+		var row = document.createElement("tr");
+		for (var j = 0; (j < d2) && (cnt < d1); j++) {
+			var cell = document.createElement("td");
+			cell.setAttribute("class","cell");
+			cell.setAttribute("id", "q"+i);
+			cell.style.width=d3;
+			cell.style.height=d3;
+			var a = document.createElement("a");
+			a.setAttribute("href", mos[cnt][0]);
+			a.setAttribute("target", "_blank");
+			var image = document.createElement("img");
+			image.setAttribute("src",mos[cnt][1]);
+			image.setAttribute("title",mos[cnt][2]);
+			image.setAttribute("width",d3);
+			image.setAttribute("height",d3);
+			image.style.borderRadius="6px";
+			cell.style.verticalAlign="top";
+			image.style.zIndex=-1000;
+			var text=document.createTextNode(mos[cnt][2]);
+			a.appendChild(image);
+			a.appendChild(text);
+			cell.appendChild(a);
+			row.appendChild(cell);
+			cnt++;
+		}
+    table.appendChild(row);
+	}
+	body.appendChild(table);
+	table.setAttribute("border", "0");
+}
+function hide(){
+if(document.getElementById("sidebar").style.display=="none"){
+	document.getElementById("sidebar").style.display="block";
+	document.getElementById("hide").innerHTML="<big><big>&#215;</big></big>";
+}else{
+	document.getElementById("sidebar").style.display="none";
+	document.getElementById("hide").innerHTML="<big><big>&equiv;</big></big>";  
+}
+}
+document.body.style.background="rgb(51, 51, 51)";
+generate_table();
+</script>
+</HTML>

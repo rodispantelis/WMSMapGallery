@@ -1,0 +1,22 @@
+mos=[
+//[link_to_the_map, path_to_the_icon, name],
+["https://wms-viewer-online.appspot.com/custom.html?&wmsurl=https://ows.terrestris.de/osm/service?&wmslayer=OSM-WMS&wmsborder=none&wmsside=OSM&wmscenterx=23.63&wmscentery=38.2021&wmszoom=5&wmsprj=EPSG:4326",
+"icons/osm.png", "OpenStreetMap"],
+["https://wms-viewer-online.appspot.com/custom.html?&wmsurl=http://128.102.22.115/wms?&wmslayer=esat&wmsborder=none&wmsside=Maps&wmscenterx=-11.338795776367&wmscentery=21.016324113245&wmszoom=10&wmsprj=EPSG:4326",
+"icons/q3.png", "The eye of Sahara"],
+["https://wms-viewer-online.appspot.com/custom.html?&wmsurl=https://neowms.sci.gsfc.nasa.gov/wms/wms?&wmslayer=SEDAC_POP&wmsborder=borders&wmsside=NASA&wmscenterx=23.63&wmscentery=38.2021&wmszoom=5&wmsprj=EPSG:4326",
+"icons/nasa.png", "NASA Web Maps"],
+["html_files/spain.html",
+"icons/spain.png", "Spain Hybrid map"],
+["https://wms-viewer-online.appspot.com/custom.html?&wmsurl=http://gis.ktimanet.gr/wms/wmsopen/wmsserver.aspx?&wmslayer=basemap&wmsborder=none&wmsside=normal&wmscenterx=23.726791611903&wmscentery=37.971368068764&wmszoom=18&wmsprj=EPSG:4326",
+"icons/q1.png", "The Acropolis"],
+["https://wms-viewer-online.appspot.com/custom.html?&wmsurl=http://www.ign.es/wms-inspire/pnoa-ma?&wmslayer=OI.OrthoimageCoverage&wmsborder=none&wmsside=Maps&wmscenterx=236254.28740599&wmscentery=5068640.0133019&wmszoom=17&wmsprj=EPSG:3857",
+"icons/q4.png","FC Barcelona"],
+["https://wms-viewer-online.appspot.com/custom.html?&wmsurl=https://geo.weather.gc.ca/geomet/?&wmslayer=GDPS.ETA_TT&wmsborder=borders&wmsside=Weather&wmscenterx=23.63&wmscentery=38.2021&wmszoom=5&wmsprj=EPSG:4326",
+"icons/q7.png","Weather Maps"],
+["https://wms-viewer-online.appspot.com/custom.html?&wmsurl=https://ows.mundialis.de/services/service?&wmslayer=TOPO-WMS&wmsborder=borders&wmsside=normal&wmscenterx=23.63&wmscentery=38.2021&wmszoom=5&wmsprj=EPSG:4326",
+"icons/q5.png","Topographic Map"],
+["https://wms-viewer-online.appspot.com/custom.html?&wmsurl=http://ows.terrestris.de/osm/service?&wmslayer=OSM-WMS&wmsborder=none&wmsside=normal&wmscenterx=3142567.518142&wmscentery=4362282.99966&wmszoom=15&wmsprj=EPSG:3857",
+"icons/q2.png", "Rhodos: Ancient City"],
+["https://mappingapps.blogspot.com/p/data-collection-mapping.html","icons/icon-114.png","Mapping Apps"]
+]; 
