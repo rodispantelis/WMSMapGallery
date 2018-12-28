@@ -49,10 +49,10 @@ a:active {
 	top:0;
 	right: 0;
 	background-color: rgb(51, 51, 51);
-	color:red;
+	color: #EC407A;
 	display:none;
-    width: 210px;
-	height: 350px;
+    width: 160px;
+	height: 250px;
 	border: 1px;
 	border-radius: 5px;
 	z-index: 5900;
@@ -72,6 +72,13 @@ a:active {
 function htmlcnt(d){
 	document.getElementById(d).innerHTML=
 		'<H3>WMS Map Gallery</H3>'+
+		'<a href="about.html" target="_blank">about</a><br>'+
+		'<a href="https://github.com/rodispantelis/WMSMapGallery" target="_blank">add a map</a><br>'+
+		'<a href="https://mappingapps.blogspot.com/" target="_blank">news and apps</a><br>';
+}
+function htmlcntm(d){
+	document.getElementById(d).innerHTML=
+		'<br><br><a>WMS Map <br>Gallery</a><br><br>'+
 		'<a href="about.html" target="_blank">about</a><br>'+
 		'<a href="https://github.com/rodispantelis/WMSMapGallery" target="_blank">add a map</a><br>'+
 		'<a href="https://mappingapps.blogspot.com/" target="_blank">news and apps</a><br>';
@@ -99,7 +106,7 @@ function generate_table() {
 		d3=screen.width/2.1;
 		body.style.margin=0;
 		body.style.padding=0;
-		htmlcnt("sidebar");
+		htmlcntm("sidebar");
 		document.getElementById("hide").style.display="block";
 	}
 
