@@ -2,7 +2,7 @@ mos=[
 //[link_to_the_map, path_to_the_icon, name],
 ["https://wms-viewer-online.appspot.com/custom.html?&wmsurl=https://ows.terrestris.de/osm/service?&wmslayer=OSM-WMS&wmsborder=none&wmsside=OSM&wmscenterx=23.63&wmscentery=38.2021&wmszoom=5&wmsprj=EPSG:4326",
 "icons/osm.png", "OpenStreetMap"],
-["html_files/World_Countries.html", "world.png", "World Countries"],
+["html_files/World_Countries.html", "icons/world.png", "World Countries"],
 ["https://wms-viewer-online.appspot.com/custom.html?&wmsurl=http://128.102.22.115/wms?&wmslayer=esat&wmsborder=none&wmsside=Maps&wmscenterx=-11.338795776367&wmscentery=21.016324113245&wmszoom=10&wmsprj=EPSG:4326",
 "icons/q3.png", "The eye of Sahara"],
 ["https://wms-viewer-online.appspot.com/custom.html?&wmsurl=https://neowms.sci.gsfc.nasa.gov/wms/wms?&wmslayer=SEDAC_POP&wmsborder=borders&wmsside=NASA&wmscenterx=23.63&wmscentery=38.2021&wmszoom=5&wmsprj=EPSG:4326",
