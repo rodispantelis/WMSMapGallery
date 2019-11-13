@@ -101,9 +101,17 @@ function generate_table() {
 		htmlcnt("side");
 		document.getElementById("side").style.display="block";
 		document.getElementById("side").style.width="250px";
-	}else{
-		d2=2;
+	}	
+	else if(screen.width>200){
+		d2=4;
 		d3=screen.width*0.6/1.2;
+		htmlcnt("side");
+		document.getElementById("side").style.display="block";
+		document.getElementById("side").style.width="250px";
+	}
+	else{
+		d2=1;
+		d3=screen.width*0.99;
 		body.style.margin=0;
 		body.style.padding=0;
 		htmlcntm("sidebar");
