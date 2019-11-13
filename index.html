@@ -102,12 +102,13 @@ function generate_table() {
 		document.getElementById("side").style.display="block";
 		document.getElementById("side").style.width="250px";
 	}	
-	else if(screen.width>200){
+	else if(screen.width>400){
 		d2=4;
 		d3=screen.width*0.6/1.2;
-		htmlcnt("side");
-		document.getElementById("side").style.display="block";
-		document.getElementById("side").style.width="250px";
+		body.style.margin=0;
+		body.style.padding=0;
+		htmlcntm("sidebar");
+		document.getElementById("hide").style.display="block";
 	}
 	else{
 		d2=1;
