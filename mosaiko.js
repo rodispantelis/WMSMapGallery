@@ -6,7 +6,6 @@ mos=[
 "icons/Imagery.png", "ArcGIS online Imagery"],
 ["https://wms-viewer-online.appspot.com/custom.html?&u=https://services.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/export?&l=World_Street_Map&b=none&s=normal&x=241363.81132999&y=6680633.6917745&z=8&j=EPSG:3857&p=arest",
 "icons/StreetMap.png", "ArcGIS online Streets"],
-["https://rodispantelis.github.io/WMSMapGallery/html_files/World_Countries.html", "icons/world.png", "World Countries"],
 ["https://wms-viewer-online.appspot.com/custom.html?&wmsurl=http://128.102.22.115/wms?&wmslayer=esat&wmsborder=none&wmsside=Maps&wmscenterx=-11.338795776367&wmscentery=21.016324113245&wmszoom=10&wmsprj=EPSG:4326",
 "icons/q3.png", "The eye of Sahara"],
 ["https://wms-viewer-online.appspot.com/custom.html?&wmsurl=https://neowms.sci.gsfc.nasa.gov/wms/wms?&wmslayer=SEDAC_POP&wmsborder=borders&wmsside=NASA&wmscenterx=23.63&wmscentery=38.2021&wmszoom=5&wmsprj=EPSG:4326",
