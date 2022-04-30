@@ -6,7 +6,7 @@ mos=[
 "icons/Imagery.png", "ArcGIS online Imagery"],
 ["https://wms-viewer-online.appspot.com/custom.html?&u=https://services.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/export?&l=World_Street_Map&b=none&s=normal&x=241363.81132999&y=6680633.6917745&z=8&j=EPSG:3857&p=arest",
 "icons/StreetMap.png", "ArcGIS online Streets"],
-["https://wms-viewer-online.appspot.com/custom.html?&u=https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?&l=World_Imagery&b=none&s=normal&x=-11.338795776367&wmscentery=21.016324113245&wmszoom=10&wmsprj=EPSG:4326",
+["https://wms-viewer-online.appspot.com/custom.html?&u=https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?&l=World_Imagery&b=none&s=normal&x=-11.338795776367&y=21.016324113245&z=10&j=EPSG:4326&p=arest",
 "icons/q3.png", "The eye of Sahara"],
 ["https://wms-viewer-online.appspot.com/custom.html?&wmsurl=https://neowms.sci.gsfc.nasa.gov/wms/wms?&wmslayer=SEDAC_POP&wmsborder=borders&wmsside=NASA&wmscenterx=23.63&wmscentery=38.2021&wmszoom=5&wmsprj=EPSG:4326",
 "icons/nasa.png", "NASA Web Maps"],
