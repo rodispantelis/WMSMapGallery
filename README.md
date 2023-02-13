@@ -1,3 +1,4 @@
+![ ](logo.png)
 # WMS Map Gallery
 A collection of web maps projected through [WMS Map Viewer](https://wms-viewer-online.appspot.com/).
 
